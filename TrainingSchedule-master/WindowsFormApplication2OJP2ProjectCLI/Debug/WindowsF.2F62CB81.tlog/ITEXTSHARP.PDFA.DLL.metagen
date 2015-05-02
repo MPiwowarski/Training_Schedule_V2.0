@@ -1,0 +1,184 @@
+ImageRuntimeVersion: v2.0.50727
+Assembly itextsharp.pdfa, Version=5.5.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly itextsharp, Version=5.5.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca: 
+	hash=None, flags=None
+Class iTextSharp.text.pdf.AFRelationshipValue: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    iTextSharp.text.pdf.PdfName Source : Public, Static, InitOnly
+    iTextSharp.text.pdf.PdfName Data : Public, Static, InitOnly
+    iTextSharp.text.pdf.PdfName Alternative : Public, Static, InitOnly
+    iTextSharp.text.pdf.PdfName Supplement : Public, Static, InitOnly
+    iTextSharp.text.pdf.PdfName Unspecified : Public, Static, InitOnly
+Interface iTextSharp.text.pdf.interfaces.IPdfAConformance: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    iTextSharp.text.pdf.interfaces.IPdfIsoConformance
+  Properties:
+    iTextSharp.text.pdf.PdfAConformanceLevel ConformanceLevel 'get ' : 
+  Methods:
+    get_ConformanceLevel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    SetConformanceLevel(PdfAConformanceLevel): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class iTextSharp.text.pdf.intern.PdfAChecker: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Methods:
+    CacheObject(PdfIndirectReference, PdfObject): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Close(PdfWriter): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CheckStructure(PdfAConformanceLevel): PrivateScope, Public, Static, HideBySig
+Class iTextSharp.text.pdf.intern.PdfA1Checker: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :iTextSharp.text.pdf.intern.PdfAChecker
+  Fields:
+    iTextSharp.text.pdf.PdfName setState : Public, Static, InitOnly
+    iTextSharp.text.pdf.PdfName noOp : Public, Static, InitOnly
+    System.util.collections.HashSet2`1[iTextSharp.text.pdf.PdfName] allowedNamedActions : Public, Static, InitOnly
+    System.util.collections.HashSet2`1[iTextSharp.text.pdf.PdfName] contentAnnotations : Public, Static, InitOnly
+    Double maxRealValue = 32767 : Public, Static, Literal, HasDefault
+    Int32 maxStringLength = 65535 : Public, Static, Literal, HasDefault
+    Int32 maxArrayLength = 8191 : Public, Static, Literal, HasDefault
+    Int32 maxDictionaryLength = 4095 : Public, Static, Literal, HasDefault
+    Int32 maxGsStackDepth = 28 : Public, Static, Literal, HasDefault
+  Methods:
+    Close(PdfWriter): PrivateScope, Public, Virtual, HideBySig
+Class iTextSharp.text.pdf.intern.PdfA2Checker: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :iTextSharp.text.pdf.intern.PdfAChecker
+  Fields:
+    System.util.collections.HashSet2`1[iTextSharp.text.pdf.PdfName] allowedBlendModes : Public, Static, InitOnly
+    System.util.collections.HashSet2`1[iTextSharp.text.pdf.PdfName] restrictedActions : Public, Static, InitOnly
+    System.util.collections.HashSet2`1[iTextSharp.text.pdf.PdfName] contentAnnotations : Public, Static, InitOnly
+    iTextSharp.text.pdf.PdfName DIGESTLOCATION : Public, Static, InitOnly
+    iTextSharp.text.pdf.PdfName DIGESTMETHOD : Public, Static, InitOnly
+    iTextSharp.text.pdf.PdfName DIGESTVALUE : Public, Static, InitOnly
+  Methods:
+    Close(PdfWriter): PrivateScope, Public, Virtual, HideBySig
+Class iTextSharp.text.pdf.intern.PdfA3Checker: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :iTextSharp.text.pdf.intern.PdfA2Checker
+Class iTextSharp.text.pdf.intern.PdfAConformanceImp: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(iTextSharp.text.pdf.PdfWriter): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    iTextSharp.text.pdf.interfaces.IPdfAConformance
+    iTextSharp.text.pdf.interfaces.IPdfIsoConformance
+  Properties:
+    iTextSharp.text.pdf.PdfAConformanceLevel ConformanceLevel 'get ' : 
+    iTextSharp.text.pdf.intern.PdfAChecker PdfAChecker 'get ' : 
+  Methods:
+    CheckPdfIsoConformance(Int32, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_ConformanceLevel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SetConformanceLevel(PdfAConformanceLevel): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    IsPdfIso(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_PdfAChecker(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class itextsharp.pdfa.iTextSharp.text.pdf.intern.ZugferdChecker: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :iTextSharp.text.pdf.intern.PdfA3Checker
+  Methods:
+    Close(PdfWriter): PrivateScope, Public, Virtual, HideBySig
+Class iTextSharp.text.pdf.PdfAConformanceException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :iTextSharp.text.pdf.PdfIsoConformanceException
+    Void .ctor(System.Object, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetObject(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct iTextSharp.text.pdf.PdfAConformanceLevel: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    iTextSharp.text.pdf.PdfAConformanceLevel PDF_A_1A = 0 : Public, Static, Literal, HasDefault
+    iTextSharp.text.pdf.PdfAConformanceLevel PDF_A_1B = 1 : Public, Static, Literal, HasDefault
+    iTextSharp.text.pdf.PdfAConformanceLevel PDF_A_2A = 2 : Public, Static, Literal, HasDefault
+    iTextSharp.text.pdf.PdfAConformanceLevel PDF_A_2B = 3 : Public, Static, Literal, HasDefault
+    iTextSharp.text.pdf.PdfAConformanceLevel PDF_A_2U = 4 : Public, Static, Literal, HasDefault
+    iTextSharp.text.pdf.PdfAConformanceLevel PDF_A_3A = 5 : Public, Static, Literal, HasDefault
+    iTextSharp.text.pdf.PdfAConformanceLevel PDF_A_3B = 6 : Public, Static, Literal, HasDefault
+    iTextSharp.text.pdf.PdfAConformanceLevel PDF_A_3U = 7 : Public, Static, Literal, HasDefault
+    iTextSharp.text.pdf.PdfAConformanceLevel ZUGFeRD = 8 : Public, Static, Literal, HasDefault
+    iTextSharp.text.pdf.PdfAConformanceLevel ZUGFeRDBasic = 9 : Public, Static, Literal, HasDefault
+    iTextSharp.text.pdf.PdfAConformanceLevel ZUGFeRDComfort = 10 : Public, Static, Literal, HasDefault
+    iTextSharp.text.pdf.PdfAConformanceLevel ZUGFeRDExtended = 11 : Public, Static, Literal, HasDefault
+Class itextsharp.pdfa.iTextSharp.text.pdf.PdfACopy: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :iTextSharp.text.pdf.PdfCopy
+    Void .ctor(iTextSharp.text.Document, System.IO.Stream, iTextSharp.text.pdf.PdfAConformanceLevel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    InitPdfIsoConformance(): PrivateScope, Public, Virtual, HideBySig
+    AddDocument(PdfReader): PrivateScope, Public, Virtual, HideBySig
+    AddPage(PdfImportedPage): PrivateScope, Public, Virtual, HideBySig
+    CreatePageStamp(PdfImportedPage): PrivateScope, Public, Virtual, HideBySig
+    SetOutputIntents(String, String, String, String, ICC_Profile): PrivateScope, Public, Virtual, HideBySig
+    Close(): PrivateScope, Public, Virtual, HideBySig
+Class iTextSharp.text.pdf.PdfARadioCheckField: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :iTextSharp.text.pdf.RadioCheckField
+    Void .ctor(iTextSharp.text.pdf.PdfWriter, iTextSharp.text.Rectangle, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 CheckType 'get set' : 
+  Methods:
+    get_CheckType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_CheckType(Int32): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetAppearance(Boolean, Boolean): PrivateScope, Public, Virtual, HideBySig
+Class iTextSharp.text.pdf.PdfAStamper: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :iTextSharp.text.pdf.PdfStamper
+    Void .ctor(iTextSharp.text.pdf.PdfReader, System.IO.Stream, iTextSharp.text.pdf.PdfAConformanceLevel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(iTextSharp.text.pdf.PdfReader, System.IO.Stream, Char, iTextSharp.text.pdf.PdfAConformanceLevel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(iTextSharp.text.pdf.PdfReader, System.IO.Stream, Char, Boolean, iTextSharp.text.pdf.PdfAConformanceLevel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreateSignature(PdfReader, Stream, Char, String, Boolean, PdfAConformanceLevel): PrivateScope, Public, Static, HideBySig
+    CreateSignature(PdfReader, Stream, Char, PdfAConformanceLevel): PrivateScope, Public, Static, HideBySig
+    CreateSignature(PdfReader, Stream, Char, String, PdfAConformanceLevel): PrivateScope, Public, Static, HideBySig
+Class iTextSharp.text.pdf.PdfAStamperImp: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :iTextSharp.text.pdf.PdfStamperImp
+  Methods:
+    SetOutputIntents(String, String, String, String, ICC_Profile): PrivateScope, Public, Virtual, HideBySig
+    SetPDFXConformance(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    InitPdfIsoConformance(): PrivateScope, Public, Virtual, HideBySig
+    CreateAnnotation(Rectangle, PdfName): PrivateScope, Public, Virtual, HideBySig
+    CreateAnnotation(Single, Single, Single, Single, PdfString, PdfString, PdfName): PrivateScope, Public, Virtual, HideBySig
+    CreateAnnotation(Single, Single, Single, Single, PdfAction, PdfName): PrivateScope, Public, Virtual, HideBySig
+Class iTextSharp.text.pdf.PdfAWriter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :iTextSharp.text.pdf.PdfWriter
+  Fields:
+    System.String MimeTypePdf : Public, Static
+    System.String MimeTypeOctetStream : Public, Static
+  Methods:
+    GetInstance(Document, Stream, PdfAConformanceLevel): PrivateScope, Public, Static, HideBySig
+    GetInstance(Document, Stream, IDocListener, PdfAConformanceLevel): PrivateScope, Public, Static, HideBySig
+    SetPdfVersion(PdfWriter, PdfAConformanceLevel): PrivateScope, Public, Static, HideBySig
+    SetOutputIntents(String, String, String, String, ICC_Profile): PrivateScope, Public, Virtual, HideBySig
+    SetPDFXConformance(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    InitPdfIsoConformance(): PrivateScope, Public, Virtual, HideBySig
+    AddFileAttachment(String, Byte[], String, String, String, PdfName, PdfDictionary): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddFileAttachment(String, Byte[], String, String, String, PdfName): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddFileAttachment(String, Byte[], String, String, PdfName): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddFileAttachment(String, Byte[], String, String): PrivateScope, Public, Virtual, HideBySig
+    AddPdfAttachment(String, Byte[], String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddPdfAttachment(String, Byte[], String, String, PdfName): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Close(): PrivateScope, Public, Virtual, HideBySig
+    CreateAnnotation(Rectangle, PdfName): PrivateScope, Public, Virtual, HideBySig
+    CreateAnnotation(Single, Single, Single, Single, PdfString, PdfString, PdfName): PrivateScope, Public, Virtual, HideBySig
+    CreateAnnotation(Single, Single, Single, Single, PdfAction, PdfName): PrivateScope, Public, Virtual, HideBySig
+Class iTextSharp.text.xml.xmp.PdfAProperties: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String PART : Public, Static, InitOnly
+    System.String CONFORMANCE : Public, Static, InitOnly
+  Methods:
+    SetPart(IXmpMeta, String): PrivateScope, Public, Static, HideBySig
+    SetConformance(IXmpMeta, String): PrivateScope, Public, Static, HideBySig
+Class iTextSharp.text.xml.xmp.PdfASchema: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit (Obsolete)
+  :iTextSharp.text.xml.xmp.XmpSchema
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String DEFAULT_XPATH_ID : Public, Static
+    System.String DEFAULT_XPATH_URI : Public, Static
+    System.String PART : Public, Static
+    System.String CONFORMANCE : Public, Static
+  Methods:
+    AddPart(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddConformance(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class iTextSharp.text.xml.xmp.PdfAXmpWriter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :iTextSharp.text.xml.xmp.XmpWriter
+    Void .ctor(System.IO.Stream, iTextSharp.text.pdf.PdfAConformanceLevel, iTextSharp.text.pdf.PdfWriter): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.IO.Stream, iTextSharp.text.pdf.PdfDictionary, iTextSharp.text.pdf.PdfAConformanceLevel, iTextSharp.text.pdf.PdfWriter): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.IO.Stream, System.Collections.Generic.IDictionary`2[System.String,System.String], iTextSharp.text.pdf.PdfAConformanceLevel, iTextSharp.text.pdf.PdfWriter): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String zugferdSchemaNS = urn:ferd:pdfa:invoice:1p0# : Public, Static, Literal, HasDefault
+    System.String zugferdConformanceLevel = ConformanceLevel : Public, Static, Literal, HasDefault
+    System.String zugferdDocumentFileName = DocumentFileName : Public, Static, Literal, HasDefault
+    System.String zugferdDocumentType = DocumentType : Public, Static, Literal, HasDefault
+    System.String zugferdVersion = Version : Public, Static, Literal, HasDefault

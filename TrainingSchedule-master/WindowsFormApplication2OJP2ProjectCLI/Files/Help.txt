@@ -1,0 +1,41 @@
+************************WELCOME TO THE HELP SECTION!********************
+****************************************************************************************
+1.How to create your training schedule?
+To create your training schedule you just have to choose a day from 
+calendar(located on the top right side of the Training schedule window) and then
+add some exercises.
+
+****************************************************************************************
+2.How to add an exercise to training schedule?
+To add an exercise to training schedule you just have to fill fields of "Exercise" form.
+Remember that name of exercise is required to add the exercise to the data grid below!
+
+****************************************************************************************
+3.How to see training schedule for a given day?
+If you want to see training schedule for a given day, you just have to choose day from
+calendar and then click the button "show schedule". 
+
+****************************************************************************************
+4.How to delete exercise from my training schedule?
+If you want to delete exercise from your training schedule you just have to select row in
+data grid with exercise you want to delete and than you have two options:
+a)Click button "Delete selected exercise/s,
+b)Click delete button on your keyboard and then click button "save changes".
+
+****************************************************************************************
+5.How to delete few exercises from my training schedule?
+To delete few exercises from your training schedule you just have to select exercises you
+want to delete and then you have two options:
+a)Click button "Delete selected exercise/s,
+b)Click delete button on your keyboard and then click button "save changes".
+
+6.How to edit given exercise and make changes?
+If you want to make changes in given exercise you just have to select current cell, which
+belongs to that exercise and then you have to click once again to edit cell. Now you
+can modify the cell and make changes. After you make changes in data grid you have to click
+button "save changes" to save changes in database.
+WARNING! If you make changes in given cells and then you choose another day from calendar
+and you'll click button "show schedule", changes you made will be lost!
+
+7.How to log out?
+To log out you just have to click button "log out" or click "X" button, in the right top corner. 
