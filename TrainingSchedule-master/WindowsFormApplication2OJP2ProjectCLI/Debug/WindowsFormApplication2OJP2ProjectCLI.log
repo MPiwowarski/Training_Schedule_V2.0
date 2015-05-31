@@ -1,29 +1,9 @@
-﻿  Form2.cpp
-c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(688): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
-          c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(674) : definition of 'i' ignored
-          c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(665) : definition of 'i' used
-c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(689): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
-          c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(674) : definition of 'i' ignored
-          c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(665) : definition of 'i' used
-c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(690): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
-          c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(674) : definition of 'i' ignored
-          c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(665) : definition of 'i' used
-c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(691): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
-          c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(674) : definition of 'i' ignored
-          c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(665) : definition of 'i' used
-  SendingEmailForm.cpp
-  WindowsFormApplication1.cpp
-c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(688): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
-          c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(674) : definition of 'i' ignored
-          c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(665) : definition of 'i' used
-c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(689): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
-          c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(674) : definition of 'i' ignored
-          c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(665) : definition of 'i' used
-c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(690): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
-          c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(674) : definition of 'i' ignored
-          c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(665) : definition of 'i' used
-c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(691): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
-          c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(674) : definition of 'i' ignored
-          c:\users\marcin\documents\visual studio 2013\projects\trainingschedule\trainingschedule-master\windowsformapplication2ojp2projectcli\Form2.h(665) : definition of 'i' used
-  Generating Code...
-  WindowsFormApplication2OJP2ProjectCLI.vcxproj -> C:\Users\Marcin\Documents\Visual Studio 2013\Projects\TrainingSchedule\TrainingSchedule-master\Debug\WindowsFormApplication2OJP2ProjectCLI.exe
+﻿Build started 2015-05-31 15:24:18.
+     1>Project "E:\GitHub\Training_Schedule_V2.0\TrainingSchedule-master\WindowsFormApplication2OJP2ProjectCLI\WindowsFormApplication2OJP2ProjectCLI.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         WindowsFormApplication2OJP2ProjectCLI.vcxproj -> E:\GitHub\Training_Schedule_V2.0\TrainingSchedule-master\Debug\WindowsFormApplication2OJP2ProjectCLI.exe
+     1>Done Building Project "E:\GitHub\Training_Schedule_V2.0\TrainingSchedule-master\WindowsFormApplication2OJP2ProjectCLI\WindowsFormApplication2OJP2ProjectCLI.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.00

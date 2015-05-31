@@ -1,3 +1,33 @@
 <?xml version="1.0" encoding="Windows-1250"?>
 <AllExercises>
+  <Exercise>
+    <idExercise>0</idExercise>
+    <calendarDate>2015-05-31</calendarDate>
+    <userLogin>marcin</userLogin>
+    <sequenceNumber>0</sequenceNumber>
+    <exerciseName>sdf</exerciseName>
+    <reps>12</reps>
+    <duration>12</duration>
+    <restAfter>32</restAfter>
+  </Exercise>
+  <Exercise>
+    <idExercise>1</idExercise>
+    <calendarDate>2015-05-31</calendarDate>
+    <userLogin>marcin</userLogin>
+    <sequenceNumber>1</sequenceNumber>
+    <exerciseName>sdf</exerciseName>
+    <reps>12</reps>
+    <duration>12</duration>
+    <restAfter>32</restAfter>
+  </Exercise>
+  <Exercise>
+    <idExercise>2</idExercise>
+    <calendarDate>2015-05-31</calendarDate>
+    <userLogin>marcin</userLogin>
+    <sequenceNumber>2</sequenceNumber>
+    <exerciseName>sdf</exerciseName>
+    <reps>12</reps>
+    <duration>12</duration>
+    <restAfter>32</restAfter>
+  </Exercise>
 </AllExercises>
