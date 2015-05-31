@@ -1,4 +1,13 @@
 # Training_Schedule_V2.0
+
+TrainingSchedule_V3.0
+
+Added:
+1.Function to create new folder "Schedules" if it doesn't exist yet.
+
+Fixed:
+Problem with saving data from dataGrid to pdf
+
 TrainingSchedule_V2.0
 
 Added:
