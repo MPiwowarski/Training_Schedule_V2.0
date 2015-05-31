@@ -39,7 +39,7 @@ namespace WindowsFormApplication2OJP2ProjectCLI {
 
 			UserLogin = userLogin;
 			UserID = UserId;
-			label1->Text = userLogin;
+			label1->Text =  userLogin;
 			showShedule();
 		}
 	private: System::Windows::Forms::Button^  cancelButton;
@@ -78,9 +78,6 @@ namespace WindowsFormApplication2OJP2ProjectCLI {
 	private: System::Windows::Forms::ToolStripMenuItem^  optionsToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  createPDFFileToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  sendScheduleToYourEmailToolStripMenuItem;
-	private: System::Windows::Forms::ToolTip^  toolTip1;
-
-
 
 
 	public:
@@ -101,12 +98,11 @@ namespace WindowsFormApplication2OJP2ProjectCLI {
 	protected:
 	private: System::Int32^ UserID;
 	private: System::String^ UserLogin;
-	private: System::ComponentModel::IContainer^  components;
 	private:
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-
+		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -115,7 +111,6 @@ namespace WindowsFormApplication2OJP2ProjectCLI {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = (gcnew System::ComponentModel::Container());
 			this->cancelButton = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
@@ -142,7 +137,6 @@ namespace WindowsFormApplication2OJP2ProjectCLI {
 			this->sendScheduleToYourEmailToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->helpToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->aboutProgramToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolTip1 = (gcnew System::Windows::Forms::ToolTip(this->components));
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
@@ -170,7 +164,7 @@ namespace WindowsFormApplication2OJP2ProjectCLI {
 			this->label1->ForeColor = System::Drawing::Color::Blue;
 			this->label1->Location = System::Drawing::Point(141, 10);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(139, 32);
+			this->label1->Size = System::Drawing::Size(138, 31);
 			this->label1->TabIndex = 1;
 			this->label1->Text = L"user\'s login";
 			// 
@@ -204,44 +198,44 @@ namespace WindowsFormApplication2OJP2ProjectCLI {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label3->Font = (gcnew System::Drawing::Font(L"BankGothic Lt BT", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label3->Location = System::Drawing::Point(54, 30);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(113, 20);
+			this->label3->Size = System::Drawing::Size(128, 17);
 			this->label3->TabIndex = 4;
 			this->label3->Text = L"Exercise name";
 			// 
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label4->Font = (gcnew System::Drawing::Font(L"BankGothic Lt BT", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label4->Location = System::Drawing::Point(130, 60);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(47, 20);
+			this->label4->Size = System::Drawing::Size(49, 17);
 			this->label4->TabIndex = 4;
 			this->label4->Text = L"Reps";
 			// 
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label5->Font = (gcnew System::Drawing::Font(L"BankGothic Lt BT", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label5->Location = System::Drawing::Point(42, 126);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(108, 20);
+			this->label5->Size = System::Drawing::Size(139, 17);
 			this->label5->TabIndex = 4;
 			this->label5->Text = L"Rest after [ s ]";
 			// 
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label6->Font = (gcnew System::Drawing::Font(L"BankGothic Lt BT", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label6->Location = System::Drawing::Point(54, 94);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(98, 20);
+			this->label6->Size = System::Drawing::Size(126, 17);
 			this->label6->TabIndex = 4;
 			this->label6->Text = L"Duration [ s ]";
 			// 
@@ -425,12 +419,12 @@ namespace WindowsFormApplication2OJP2ProjectCLI {
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(566, 651);
+			this->ClientSize = System::Drawing::Size(566, 652);
 			this->Controls->Add(this->groupBox3);
 			this->Controls->Add(this->menuStrip1);
 			this->MainMenuStrip = this->menuStrip1;
 			this->MaximumSize = System::Drawing::Size(582, 690);
-			this->MinimumSize = System::Drawing::Size(582, 39);
+			this->MinimumSize = System::Drawing::Size(582, 38);
 			this->Name = L"Form2";
 			this->Text = L"Your training shedule";
 			this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(this, &Form2::Form2_FormClosing);
@@ -449,268 +443,268 @@ namespace WindowsFormApplication2OJP2ProjectCLI {
 #pragma endregion
 
 	private: System::Void cancelButton_Click(System::Object^  sender, System::EventArgs^  e) {
-		System::Windows::Forms::DialogResult question = MessageBox::Show("Are you sure you want to log out?",
-			"Attention!", MessageBoxButtons::YesNoCancel, MessageBoxIcon::Question);
+				 System::Windows::Forms::DialogResult question = MessageBox::Show("Are you sure you want to log out?",
+					 "Attention!", MessageBoxButtons::YesNoCancel, MessageBoxIcon::Question);
 
-		if (question == System::Windows::Forms::DialogResult::Yes)
-		{
-			this->Hide();
-			otherform->Show();
-		}
-
+				 if (question == System::Windows::Forms::DialogResult::Yes)
+				 {
+					 this->Hide();
+					 otherform->Show();
+				 }
+				 
 	}
 	private: System::Void Form2_FormClosing(System::Object^  sender, System::Windows::Forms::FormClosingEventArgs^  e) {
-		System::Windows::Forms::DialogResult question = MessageBox::Show("Are you sure you want to log out?",
-			"Attention!", MessageBoxButtons::YesNoCancel, MessageBoxIcon::Question);
+				 System::Windows::Forms::DialogResult question = MessageBox::Show("Are you sure you want to log out?",
+					 "Attention!", MessageBoxButtons::YesNoCancel, MessageBoxIcon::Question);
 
-		if (question == System::Windows::Forms::DialogResult::Yes)
-		{
-			this->Hide();
-			otherform->Show();
-		}
+				 if (question == System::Windows::Forms::DialogResult::Yes)
+				 {
+					 this->Hide();
+					 otherform->Show();
+				 }
 	}
 	private: System::Void addExerciseButton_Click(System::Object^  sender, System::EventArgs^  e) {
 
-		//1 VALIDATION CONDITION: exerciseNameTextBox can not be empty!
-		bool validation = true;
-		if (exerciseNameTextBox->Text == "")
-		{
-			MessageBox::Show("You must write the name of exercise!");
-			validation = false;
-		}
+				 //1 VALIDATION CONDITION: exerciseNameTextBox can not be empty!
+				 bool validation = true;
+				 if (exerciseNameTextBox->Text == "")
+				 {
+					 MessageBox::Show("You must write the name of exercise!");
+					 validation = false;
+				 }
 
-		if (validation == true)
-		{
+				 if (validation == true)
+				 {
 
-			String ^ strFilename = L"Files/ExercisesList.xml";
-			XmlDocument ^ docLoginsAndPasswords = gcnew XmlDocument;
-			//Finding greatest id of all exercises
-			int maxId = -1;
-			int maxSequenceNumber = -1;
-			if (File::Exists(strFilename))
-			{
-				docLoginsAndPasswords->Load(strFilename);
-				XmlElement  ^ elm = docLoginsAndPasswords->DocumentElement;
-				XmlNodeList ^ lstUsers = elm->ChildNodes;
+					 String ^ strFilename = L"Files/ExercisesList.xml";
+					 XmlDocument ^ docLoginsAndPasswords = gcnew XmlDocument;
+					 //Finding greatest id of all exercises
+					 int maxId = -1;
+					 int maxSequenceNumber = -1;
+					 if (File::Exists(strFilename))
+					 {
+						 docLoginsAndPasswords->Load(strFilename);
+						 XmlElement  ^ elm = docLoginsAndPasswords->DocumentElement;
+						 XmlNodeList ^ lstUsers = elm->ChildNodes;
 
-				//checking what is the greatest value of id of all exercises
-				for (int i = 0; i < lstUsers->Count; i++)
-				{
-					if (maxId < int::Parse(lstUsers[i]->ChildNodes[0]->InnerText))
-						maxId = int::Parse(lstUsers[i]->ChildNodes[0]->InnerText);
-				}
-				maxId++;
+						 //checking what is the greatest value of id of all exercises
+						 for (int i = 0; i < lstUsers->Count; i++)
+						 {
+							 if (maxId < int::Parse(lstUsers[i]->ChildNodes[0]->InnerText))
+								 maxId = int::Parse(lstUsers[i]->ChildNodes[0]->InnerText);
+						 }
+						 maxId++;
 
-				//checking what is the greates sequence number of all exercises for logged user:
-				for (int i = 0; i < lstUsers->Count; i++)
-				{
-					if (lstUsers[i]->ChildNodes[2]->InnerText->ToString() == UserLogin)
-					{
-						if (lstUsers[i]->ChildNodes[1]->InnerText->ToString() == monthCalendar1->SelectionRange->Start.ToShortDateString())
-						{
-							if (maxSequenceNumber < int::Parse(lstUsers[i]->ChildNodes[3]->InnerText))
-								maxSequenceNumber = int::Parse(lstUsers[i]->ChildNodes[3]->InnerText);
-						}
-					}
-				}
-				maxSequenceNumber++;
+						 //checking what is the greates sequence number of all exercises for logged user:
+						 for (int i = 0; i < lstUsers->Count; i++)
+						 {
+							 if (lstUsers[i]->ChildNodes[2]->InnerText->ToString() == UserLogin)
+							 {
+								 if (lstUsers[i]->ChildNodes[1]->InnerText->ToString() == monthCalendar1->SelectionRange->Start.ToShortDateString())
+								 {
+									 if (maxSequenceNumber < int::Parse(lstUsers[i]->ChildNodes[3]->InnerText))
+										 maxSequenceNumber = int::Parse(lstUsers[i]->ChildNodes[3]->InnerText);
+								 }
+							 }
+						 }
+						 maxSequenceNumber++;
 
-				docLoginsAndPasswords->Load(strFilename);
+						 docLoginsAndPasswords->Load(strFilename);
 
-				XmlElement ^ Element = docLoginsAndPasswords->CreateElement(L"Exercise");
-				String ^ strUser = L"<idExercise>" + maxId + L"</idExercise>" +
-					L"<calendarDate>" + monthCalendar1->SelectionRange->Start.ToShortDateString() + L"</calendarDate>" +
-					L"<userLogin>" + UserLogin + L"</userLogin>" +
-					L"<sequenceNumber>" + maxSequenceNumber + L"</sequenceNumber>" +
-					L"<exerciseName>" + exerciseNameTextBox->Text + L"</exerciseName>" +
-					L"<reps>" + repsMaskedTextBox->Text->ToString()->Trim() + L"</reps>" +
-					L"<duration>" + durationMaskedTextBox->Text->ToString()->Trim() + L"</duration>" +
-					L"<restAfter>" + restAfterMaskedTextBox->Text->ToString()->Trim() + L"</restAfter>"
-					;
+						 XmlElement ^ Element = docLoginsAndPasswords->CreateElement(L"Exercise");
+						 String ^ strUser = L"<idExercise>" + maxId + L"</idExercise>" +
+							 L"<calendarDate>" + monthCalendar1->SelectionRange->Start.ToShortDateString() + L"</calendarDate>" +
+							 L"<userLogin>" + UserLogin + L"</userLogin>" +
+							 L"<sequenceNumber>" + maxSequenceNumber + L"</sequenceNumber>" +
+							 L"<exerciseName>" + exerciseNameTextBox->Text + L"</exerciseName>" +
+							 L"<reps>" + repsMaskedTextBox->Text->ToString()->Trim() + L"</reps>" +
+							 L"<duration>" + durationMaskedTextBox->Text->ToString()->Trim() + L"</duration>" +
+							 L"<restAfter>" + restAfterMaskedTextBox->Text->ToString()->Trim() + L"</restAfter>"
+							 ;
 
-				Element->InnerXml = strUser;
-				docLoginsAndPasswords->DocumentElement->AppendChild(Element);
+						 Element->InnerXml = strUser;
+						 docLoginsAndPasswords->DocumentElement->AppendChild(Element);
 
-				docLoginsAndPasswords->Save(strFilename);
-				showShedule();
-				MessageBox::Show("Exercise has been added sucessfully!");
-			}
-			else
-			{
-				MessageBox::Show("File with exercises doesnt exist!");
-			}
-		}
+						 docLoginsAndPasswords->Save(strFilename);
+						 showShedule();
+						 MessageBox::Show("Exercise has been added sucessfully!");
+					 }
+					 else
+					 {
+						 MessageBox::Show("File with exercises doesnt exist!");
+					 }
+				 }
 	}
 	private: System::Void showSheduleButton_Click(System::Object^  sender, System::EventArgs^  e) {
 
-		showShedule();
+				 showShedule();
 	}
 	private: System::Void deleteExerciseButton_Click(System::Object^  sender, System::EventArgs^  e) {
-		System::Windows::Forms::DialogResult question = MessageBox::Show("Are you sure you want delete selected items?",
-			"Attention!", MessageBoxButtons::YesNoCancel, MessageBoxIcon::Question);
+				 System::Windows::Forms::DialogResult question = MessageBox::Show("Are you sure you want delete selected items?",
+					 "Attention!", MessageBoxButtons::YesNoCancel, MessageBoxIcon::Question);
 
-		if (question == System::Windows::Forms::DialogResult::Yes)
-		{
-			saveChanges();
-		}
+				 if (question == System::Windows::Forms::DialogResult::Yes)
+				 {
+					 saveChanges();
+				 }
 
 	}
 	private: System::Void saveChangesButton_Click(System::Object^  sender, System::EventArgs^  e) {
 
-		System::Windows::Forms::DialogResult question = MessageBox::Show("Are you sure you would like to save the changes:",
-			"Attention!", MessageBoxButtons::YesNoCancel, MessageBoxIcon::Question);
+				 System::Windows::Forms::DialogResult question = MessageBox::Show("Are you sure you would like to save the changes:",
+					 "Attention!", MessageBoxButtons::YesNoCancel, MessageBoxIcon::Question);
 
-		if (question == System::Windows::Forms::DialogResult::Yes)
-		{
-			saveChanges();
-		}
+				 if (question == System::Windows::Forms::DialogResult::Yes)
+				 {
+					 saveChanges();
+				 }											 
 	}
 	private: System::Void aboutProgramToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		WindowsFormApplication2OJP2ProjectCLI::ViewHelpForm ^ vHelp = gcnew WindowsFormApplication2OJP2ProjectCLI::ViewHelpForm(this);
-		vHelp->Show();
-		/*this->Hide();*/
-	}
-
+			 WindowsFormApplication2OJP2ProjectCLI::ViewHelpForm ^ vHelp = gcnew WindowsFormApplication2OJP2ProjectCLI::ViewHelpForm(this);
+			 vHelp->Show();
+			 /*this->Hide();*/
+}
+	
 #pragma region Other functions
 	private: System::Void showShedule()
-	{
-		String ^ strFilename = L"Files/ExercisesList.xml";
-		XmlDocument ^ docLoginsAndPasswords = gcnew XmlDocument;
-		if (File::Exists(strFilename))
-		{
-			docLoginsAndPasswords->Load(strFilename);
-			XmlElement  ^ elm = docLoginsAndPasswords->DocumentElement;
-			XmlNodeList ^ lstUsers = elm->ChildNodes;
-
-			//1.Creating headers of table
-			dataGridView1->ColumnCount = 5;
-			dataGridView1->Columns[0]->HeaderCell->Value = "Sequence number";
-			dataGridView1->Columns[1]->HeaderCell->Value = "Exercise name";
-			dataGridView1->Columns[2]->HeaderCell->Value = "Reps";
-			dataGridView1->Columns[3]->HeaderCell->Value = "Duration[s]";
-			dataGridView1->Columns[4]->HeaderCell->Value = "Rest after[s]";
-
-			//2.Counting dataGridView1->RowCount and adding rows 
-			dataGridView1->DefaultCellStyle->BackColor = Color::White;
-			dataGridView1->AlternatingRowsDefaultCellStyle->BackColor = Color::LightGreen;
-
-			dataGridView1->RowCount = 1;
-			for (int i = 0; i < lstUsers->Count; i++)
-			{
-				if (lstUsers[i]->ChildNodes[1]->InnerText->ToString() == monthCalendar1->SelectionRange->Start.ToShortDateString())
 				{
-					if (lstUsers[i]->ChildNodes[2]->InnerText->ToString() == UserLogin)
-					{
-						dataGridView1->RowCount++;
-					}
+							 String ^ strFilename = L"Files/ExercisesList.xml";
+							 XmlDocument ^ docLoginsAndPasswords = gcnew XmlDocument;
+							 if (File::Exists(strFilename))
+							 {
+								 docLoginsAndPasswords->Load(strFilename);
+								 XmlElement  ^ elm = docLoginsAndPasswords->DocumentElement;
+								 XmlNodeList ^ lstUsers = elm->ChildNodes;
+
+								 //1.Creating headers of table
+								 dataGridView1->ColumnCount = 5;
+								 dataGridView1->Columns[0]->HeaderCell->Value = "Sequence number";
+								 dataGridView1->Columns[1]->HeaderCell->Value = "Exercise name";
+								 dataGridView1->Columns[2]->HeaderCell->Value = "Reps";
+								 dataGridView1->Columns[3]->HeaderCell->Value = "Duration[s]";
+								 dataGridView1->Columns[4]->HeaderCell->Value = "Rest after[s]";
+
+								 //2.Counting dataGridView1->RowCount and adding rows 
+								 dataGridView1->DefaultCellStyle->BackColor = Color::White;
+								 dataGridView1->AlternatingRowsDefaultCellStyle->BackColor = Color::LightGreen;
+
+								 dataGridView1->RowCount = 1;
+								 for (int i = 0; i < lstUsers->Count; i++)
+								 {
+									 if (lstUsers[i]->ChildNodes[1]->InnerText->ToString() == monthCalendar1->SelectionRange->Start.ToShortDateString())
+									 {
+										 if (lstUsers[i]->ChildNodes[2]->InnerText->ToString() == UserLogin)
+										 {
+											 dataGridView1->RowCount++;
+										 }
+									 }
+								 }
+						
+
+								 int j = 0;//current number of created row
+								 for (int i = 0; i < lstUsers->Count; i++)
+								 {
+									 if (lstUsers[i]->ChildNodes[2]->InnerText->ToString() == UserLogin)
+									 {
+										 if (lstUsers[i]->ChildNodes[1]->InnerText->ToString() == monthCalendar1->SelectionRange->Start.ToShortDateString())
+										 {
+											 dataGridView1->Rows[j]->Cells[0]->Value = lstUsers[i]->ChildNodes[3]->InnerText;
+											 dataGridView1->Rows[j]->Cells[1]->Value = lstUsers[i]->ChildNodes[4]->InnerText;
+											 dataGridView1->Rows[j]->Cells[2]->Value = lstUsers[i]->ChildNodes[5]->InnerText;
+											 dataGridView1->Rows[j]->Cells[3]->Value = lstUsers[i]->ChildNodes[6]->InnerText;
+											 dataGridView1->Rows[j]->Cells[4]->Value = lstUsers[i]->ChildNodes[7]->InnerText;
+											 j++;
+										 }
+									 }
+								 }
+
+
+
+								 //dataGridView1->DefaultCellStyle->BackColor = Color::White;
+								 //dataGridView1->AlternatingRowsDefaultCellStyle->BackColor = Color::LightGreen;
+								 //for (System::Int32 i = 0; i < 5; i++) {
+								 // for (System::Int32 j = 0; j < 5; j++) {
+								 //	 dataGridView1->Rows[i]->Cells[j]->Value = i + j;
+								 //	 dataGridView1->Columns[j]->HeaderCell->Value = j.ToString();
+								 // }
+								 // /*dataGridView1->Rows[i]->HeaderCell->Value = i.ToString();*/
+								 //}
+							 }
 				}
-			}
-
-
-			int j = 0;//current number of created row
-			for (int i = 0; i < lstUsers->Count; i++)
-			{
-				if (lstUsers[i]->ChildNodes[2]->InnerText->ToString() == UserLogin)
-				{
-					if (lstUsers[i]->ChildNodes[1]->InnerText->ToString() == monthCalendar1->SelectionRange->Start.ToShortDateString())
-					{
-						dataGridView1->Rows[j]->Cells[0]->Value = lstUsers[i]->ChildNodes[3]->InnerText;
-						dataGridView1->Rows[j]->Cells[1]->Value = lstUsers[i]->ChildNodes[4]->InnerText;
-						dataGridView1->Rows[j]->Cells[2]->Value = lstUsers[i]->ChildNodes[5]->InnerText;
-						dataGridView1->Rows[j]->Cells[3]->Value = lstUsers[i]->ChildNodes[6]->InnerText;
-						dataGridView1->Rows[j]->Cells[4]->Value = lstUsers[i]->ChildNodes[7]->InnerText;
-						j++;
-					}
-				}
-			}
-
-
-
-			//dataGridView1->DefaultCellStyle->BackColor = Color::White;
-			//dataGridView1->AlternatingRowsDefaultCellStyle->BackColor = Color::LightGreen;
-			//for (System::Int32 i = 0; i < 5; i++) {
-			// for (System::Int32 j = 0; j < 5; j++) {
-			//	 dataGridView1->Rows[i]->Cells[j]->Value = i + j;
-			//	 dataGridView1->Columns[j]->HeaderCell->Value = j.ToString();
-			// }
-			// /*dataGridView1->Rows[i]->HeaderCell->Value = i.ToString();*/
-			//}
-		}
-	}
 	private: System::Void saveChanges()
 	{
-		String ^ strFilename = L"Files/ExercisesList.xml";
-		XmlDocument ^ docLoginsAndPasswords = gcnew XmlDocument;
-		if (File::Exists(strFilename))
-		{
-			docLoginsAndPasswords->Load(strFilename);
-			XmlElement  ^ elm = docLoginsAndPasswords->DocumentElement;
-			XmlNodeList ^ lstUsers = elm->ChildNodes;
+				 String ^ strFilename = L"Files/ExercisesList.xml";
+				 XmlDocument ^ docLoginsAndPasswords = gcnew XmlDocument;
+				 if (File::Exists(strFilename))
+				 {
+					 docLoginsAndPasswords->Load(strFilename);
+					 XmlElement  ^ elm = docLoginsAndPasswords->DocumentElement;
+					 XmlNodeList ^ lstUsers = elm->ChildNodes;
 
 
-			//Algorithm: 1 Delete all rows of logged user and save file 
-			//2. Save rows which are left in datagrid to xml file as new 
+					 //Algorithm: 1 Delete all rows of logged user and save file 
+					 //2. Save rows which are left in datagrid to xml file as new 
 
-			for (int i = 0; i < lstUsers->Count; i++)
-			{
-				if (lstUsers[i]->ChildNodes[2]->InnerText->ToString() == UserLogin)
-				{
-					if (lstUsers[i]->ChildNodes[1]->InnerText->ToString() == monthCalendar1->SelectionRange->Start.ToShortDateString())
-					{
-						elm->RemoveChild(elm->ChildNodes[i]);
-						i = -1;
-					}
-				}
-			}
+					 for (int i = 0; i < lstUsers->Count; i++)
+					 {
+						 if (lstUsers[i]->ChildNodes[2]->InnerText->ToString() == UserLogin)
+						 {
+							 if (lstUsers[i]->ChildNodes[1]->InnerText->ToString() == monthCalendar1->SelectionRange->Start.ToShortDateString())
+							 {
+								 elm->RemoveChild(elm->ChildNodes[i]);
+								 i = -1;
+							 }
+						 }
+					 }
 
-			docLoginsAndPasswords->Save(strFilename);
-			docLoginsAndPasswords->Load(strFilename);
-			//
+					 docLoginsAndPasswords->Save(strFilename);
+					 docLoginsAndPasswords->Load(strFilename);
+					 //
 
-			int j = 0;//current number of created row
-			for (int i = 0; i < dataGridView1->RowCount - 1; i++)
-			{
-				if (dataGridView1->Rows[j] == nullptr)
-				{
-					break;
-				}
-				if (dataGridView1->Rows[i]->Selected == false)
-				{
-					int maxId = -1;
-					for (int i = 0; i < lstUsers->Count; i++)
-					{
-						if (maxId < int::Parse(lstUsers[i]->ChildNodes[0]->InnerText))
-							maxId = int::Parse(lstUsers[i]->ChildNodes[0]->InnerText);
-					}
-					maxId++;
+					 int j = 0;//current number of created row
+					 for (int i = 0; i < dataGridView1->RowCount - 1; i++)
+					 {
+						 if (dataGridView1->Rows[j] == nullptr)
+						 {
+							 break;
+						 }
+						 if (dataGridView1->Rows[i]->Selected == false)
+						 {
+							 int maxId = -1;
+							 for (int i = 0; i < lstUsers->Count; i++)
+							 {
+								 if (maxId < int::Parse(lstUsers[i]->ChildNodes[0]->InnerText))
+									 maxId = int::Parse(lstUsers[i]->ChildNodes[0]->InnerText);
+							 }
+							 maxId++;
 
-					docLoginsAndPasswords->Load(strFilename);
+							 docLoginsAndPasswords->Load(strFilename);
 
-					XmlElement ^ Element = docLoginsAndPasswords->CreateElement(L"Exercise");
-					String ^ strUser = L"<idExercise>" + maxId + L"</idExercise>" +
-						L"<calendarDate>" + monthCalendar1->SelectionRange->Start.ToShortDateString() + L"</calendarDate>" +
-						L"<userLogin>" + UserLogin + L"</userLogin>" +
-						L"<sequenceNumber>" + j + L"</sequenceNumber>" +
-						L"<exerciseName>" + dataGridView1->Rows[i]->Cells[1]->Value->ToString() + L"</exerciseName>" +
-						L"<reps>" + dataGridView1->Rows[i]->Cells[2]->Value->ToString() + L"</reps>" +
-						L"<duration>" + dataGridView1->Rows[i]->Cells[3]->Value->ToString() + L"</duration>" +
-						L"<restAfter>" + dataGridView1->Rows[i]->Cells[4]->Value->ToString() + L"</restAfter>"
-						;
+							 XmlElement ^ Element = docLoginsAndPasswords->CreateElement(L"Exercise");
+							 String ^ strUser = L"<idExercise>" + maxId + L"</idExercise>" +
+								 L"<calendarDate>" + monthCalendar1->SelectionRange->Start.ToShortDateString() + L"</calendarDate>" +
+								 L"<userLogin>" + UserLogin + L"</userLogin>" +
+								 L"<sequenceNumber>" + j + L"</sequenceNumber>" +
+								 L"<exerciseName>" + dataGridView1->Rows[i]->Cells[1]->Value->ToString() + L"</exerciseName>" +
+								 L"<reps>" + dataGridView1->Rows[i]->Cells[2]->Value->ToString() + L"</reps>" +
+								 L"<duration>" + dataGridView1->Rows[i]->Cells[3]->Value->ToString() + L"</duration>" +
+								 L"<restAfter>" + dataGridView1->Rows[i]->Cells[4]->Value->ToString() + L"</restAfter>"
+								 ;
 
-					Element->InnerXml = strUser;
-					docLoginsAndPasswords->DocumentElement->AppendChild(Element);
+							 Element->InnerXml = strUser;
+							 docLoginsAndPasswords->DocumentElement->AppendChild(Element);
 
-					docLoginsAndPasswords->Save(strFilename);
-					j++;
-				}
-			}
-			docLoginsAndPasswords->Save(strFilename);
-			showShedule();
-		}
+							 docLoginsAndPasswords->Save(strFilename);
+							 j++;
+						 }
+					 }
+					 docLoginsAndPasswords->Save(strFilename);
+					 showShedule();
+				 }
 	}
 	private: System::Void createPDF()
 	{
-		//showShedule();
+				 //showShedule();
 		System::String^ subPath = "Schedules";
 		bool exists = Directory::Exists(subPath);
 		if (!exists)
@@ -721,72 +715,71 @@ namespace WindowsFormApplication2OJP2ProjectCLI {
 
 
 
-		iTextSharp::text::Document^ document;
-		document = gcnew iTextSharp::text::Document();
-		pdf::PdfWriter::GetInstance(document, gcnew FileStream("Schedules/" + UserLogin + "_TrainingSchedule_" + monthCalendar1->SelectionRange->Start.ToShortDateString() + ".pdf", System::IO::FileMode::Create));
+				 iTextSharp::text::Document^ document;
+				 document = gcnew iTextSharp::text::Document();
+				 pdf::PdfWriter::GetInstance(document, gcnew FileStream("Schedules/" + UserLogin + "_TrainingSchedule_" + monthCalendar1->SelectionRange->Start.ToShortDateString() + ".pdf", System::IO::FileMode::Create));
 
-		document->Open();
-		document->Add(gcnew Paragraph("Training schedule for: " + monthCalendar1->SelectionRange->Start.ToShortDateString()));
-		document->Add(gcnew Paragraph("\n"));
+				 document->Open();
+				 document->Add(gcnew Paragraph("Training schedule for: " + monthCalendar1->SelectionRange->Start.ToShortDateString()));
+				 document->Add(gcnew Paragraph("\n"));
 
-		//Creating iTextSharp Table from the DataTable data
-		pdf::PdfPTable pdfTable(dataGridView1->ColumnCount);
-		pdfTable.DefaultCell->Padding = 3;
-		pdfTable.WidthPercentage = 70;
-		pdfTable.DefaultCell->BorderWidth = 1;
+				 //Creating iTextSharp Table from the DataTable data
+				 pdf::PdfPTable pdfTable(dataGridView1->ColumnCount);
+				 pdfTable.DefaultCell->Padding = 3;
+				 pdfTable.WidthPercentage = 70;
+				 pdfTable.DefaultCell->BorderWidth = 1;
 
-		//Adding Header row
-		for each (DataGridViewColumn^ column in dataGridView1->Columns)
-		{
-			pdf::PdfPCell^ cell = gcnew pdf::PdfPCell(% Phrase(column->HeaderText));
-			cell->BackgroundColor = gcnew iTextSharp::text::BaseColor(240, 240, 240);
-			pdfTable.AddCell(cell);
-			/* pdfTable.AddCell(column->HeaderText->ToString());*/
-		}
+				 //Adding Header row
+				 for each (DataGridViewColumn^ column in dataGridView1->Columns)
+				 {
+					 pdf::PdfPCell^ cell = gcnew pdf::PdfPCell(% Phrase(column->HeaderText));
+					 cell->BackgroundColor = gcnew iTextSharp::text::BaseColor(240, 240, 240);
+					 pdfTable.AddCell(cell);
+					 /* pdfTable.AddCell(column->HeaderText->ToString());*/
+				 }
 
-		//Adding DataRow
+				 //Adding DataRow
 
-		for (int i = 0; i < dataGridView1->RowCount - 1; i++)
-		{
-			for (int j = 0; j < dataGridView1->ColumnCount; j++)
-			{
-				pdfTable.AddCell((dataGridView1->Rows[i]->Cells[j]->Value)->ToString());
-			}
-		}
+				 for (int i = 0; i < dataGridView1->RowCount - 1; i++)
+				 {
+					 for (int j = 0; j < dataGridView1->ColumnCount; j++)
+					 {
+						 pdfTable.AddCell((dataGridView1->Rows[i]->Cells[j]->Value)->ToString());
+					 }
+				 }
 
-		try{
-			document->Add(%pdfTable);
-		}
-		catch (Exception^ ex)
-		{
-			MessageBox::Show(ex->ToString());
-		}
-		document->Close();
-		MessageBox::Show("Training schedule named as \" " + UserLogin + "_TrainingSchedule_" + monthCalendar1->SelectionRange->Start.ToShortDateString() + ".pdf\" has been created!\n You can find it in folder named \"Schedules\" in the place where you installed the programm.");
+				 try{
+					 document->Add(%pdfTable);
+				 }
+				 catch (Exception^ ex)
+				 {
+					 MessageBox::Show(ex->ToString());
+				 }
+				 document->Close();
+				 MessageBox::Show("Training schedule named as \" " + UserLogin + "_TrainingSchedule_" + monthCalendar1->SelectionRange->Start.ToShortDateString() + ".pdf\" has been created!\n You can find it in folder named \"Schedules\" in the place where you installed the programm.");
 
 	}
 #pragma endregion 
-	private: System::Void createPDFFileToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-		try{
-			createPDF();
-		}
-		catch (Exception^ ex)
-		{
-			MessageBox::Show(ex->ToString());
-		}
-	}
-	private: System::Void sendScheduleToYourEmailToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+private: System::Void createPDFFileToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			 try{
+				 createPDF();
+			 }
+			 catch (Exception^ ex)
+			 {
+				 MessageBox::Show(ex->ToString());
+			 }
+			 }
+private: System::Void sendScheduleToYourEmailToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			
+			 System::Windows::Forms::DialogResult question = MessageBox::Show("Before you send your training schedule the PDF file must be created! Do you want to continue?",
+				 "Attention!", MessageBoxButtons::YesNoCancel, MessageBoxIcon::Question);
 
-		System::Windows::Forms::DialogResult question = MessageBox::Show("Before you send your training schedule the PDF file must be created! Do you want to continue?",
-			"Attention!", MessageBoxButtons::YesNoCancel, MessageBoxIcon::Question);
-
-		if (question == System::Windows::Forms::DialogResult::Yes)
-		{
-			createPDF();
-			WindowsFormApplication2OJP2ProjectCLI::SendingEmailForm ^ vHelp = gcnew WindowsFormApplication2OJP2ProjectCLI::SendingEmailForm(this, "Schedules/" + UserLogin + "_TrainingSchedule_" + monthCalendar1->SelectionRange->Start.ToShortDateString() + ".pdf");
-			vHelp->Show();
-		}
-	}
-	};
+			 if (question == System::Windows::Forms::DialogResult::Yes)
+			 {			
+					 createPDF();
+					 WindowsFormApplication2OJP2ProjectCLI::SendingEmailForm ^ vHelp = gcnew WindowsFormApplication2OJP2ProjectCLI::SendingEmailForm(this, "Schedules/" + UserLogin + "_TrainingSchedule_" + monthCalendar1->SelectionRange->Start.ToShortDateString() + ".pdf");
+					 vHelp->Show();			
+			 }		 
 }
-/
+};
+}
