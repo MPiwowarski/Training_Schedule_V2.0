@@ -1,4 +1,4 @@
-# Training_Schedule_V2.0
+# Training_Schedule_OJP2_Project1
 
 TrainingSchedule_V3.0
 
