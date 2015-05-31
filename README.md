@@ -1,4 +1,10 @@
 # Training_Schedule_OJP2_Project1
+*** ABOUT PROGRAM ***
+
+
+*** MODIFY HISTORY ***
+TrainingSchedule_V4.0
+Fixed: Problem with sendind email.
 
 TrainingSchedule_V3.0
 
