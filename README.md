@@ -1,5 +1,6 @@
 # Training_Schedule_OJP2_Project1
 **************************************************** ABOUT PROGRAM ****************************************
+
 The app was made in C++/CLI framework.
 
 The program (my Uni project) is used to create a training schedule.
